@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <%-include("partials/header.ejs")%>
+    <div class="login">
+    
+   <form action="/login" method="get">
+  <button type="submit" class="btn btn-dark sign">Login</button>
+</form>
+
+</div>
+
+<!-- Main Content Section -->
+<div class="content-section">
+  <!-- HOME -->
+  <section id="home" class="page-section">
+
+    <h1 class="welcome">Welcome to FocusPanel</h1>
+     <h2><%= content.quote %></h2>
+      <p>— <%= content.author %></p>
+
+  </section>
+
+  <!-- GUIDE -->
+  <section id="guide" class="page-section">
+
+    <h2>Guide / Tutorial</h2>
+    <p>📹 This is where your video will go later (we’ll add it at the end).</p>
+
+  </section>
+  <section id="midbuttons"  class="page-section"> 
+   
+<div class="mid">
+
+  <form action="/weekly" method="get"class="one"><button >Weekly Tracker</button></form>
+  <form action="/pomodoro" method="get"class="two"><button >Pomodoro Timer</button></form>
+  <form action="/notes" method="get"class="three"><button >Notes</button></form>
+  <form action="/report" method="get"class="four"><button >Report</button></form>
+
+</div>
+</section>
+
+<section id="todo" class="page-section">
+
+  <h2>To-Do List</h2>
+  <p>Manage your tasks efficiently with our to-do list feature.</p>
+</section>
+
+<section id="features" class="page-section">
+<p>Our key features include:</p>
+</section>
+
+</div>
+</body>
+</html>
